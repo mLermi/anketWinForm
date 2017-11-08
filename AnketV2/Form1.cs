@@ -30,6 +30,7 @@ namespace AnketV2
             MessageBox.Show("Eklendi!");
             txtSoru.Text = "";
             SorulariYenile();
+            CevaplariYenile();
         }
 
         public void Form1_Load(object sender, EventArgs e)
@@ -118,7 +119,9 @@ namespace AnketV2
                 }
             }
             MessageBox.Show("Eklendi");
+            txtAdSoyad.Text = "";
             CevaplariYenile();
+            SorulariYenile();
         }
         public void CevaplariYenile()
         {
@@ -132,7 +135,7 @@ namespace AnketV2
                 Cevap = x.Yanit.ToString()
 
             }).ToList();
-            SorulariYenile();          
+                     
         }
 
         private void btnSoruSil_Click(object sender, EventArgs e)
@@ -171,6 +174,8 @@ namespace AnketV2
                     fsd.GelenSoru = iletilecek;
                     fsd.Show();
                 }
+                SorulariYenile();
+                CevaplariYenile();
             }
         }
 

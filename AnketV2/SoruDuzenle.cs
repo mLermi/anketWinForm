@@ -35,8 +35,10 @@ namespace AnketV2
             db.SaveChanges();
             MessageBox.Show("Düzenlendi!");
             Form1 f =(Form1) Application.OpenForms["Form1"];
+            
             f.SorulariYenile();
             f.CevaplariYenile();
+            f.Refresh();
             this.Close();
         }
     }

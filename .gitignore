@@ -8,3 +8,7 @@
 /DAL/obj/Debug
 /Entity/bin/Debug
 /Entity/obj/Debug
+/.vs
+/DAL/obj/Release
+/Entity/obj/Release
+/AnketV2/obj/Release
